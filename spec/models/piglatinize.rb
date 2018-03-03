@@ -4,6 +4,7 @@ class PigLatinize
 
   def initialize(phrase)
     @phrase = phrase
+    self.piglatinize
   end
 
   def words
