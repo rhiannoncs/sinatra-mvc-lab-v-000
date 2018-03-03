@@ -1,10 +1,5 @@
 class PigLatinizer
-  attr_reader :phrase
   VOWELS = ["a", "e", "i", "o", "u"]
-
-  def initialize(phrase)
-    @phrase = phrase
-  end
 
   def words
     @phrase.split
