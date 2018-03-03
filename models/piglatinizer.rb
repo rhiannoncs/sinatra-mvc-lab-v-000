@@ -27,7 +27,7 @@ class PigLatinizer
   end
 
   def piglatinize
-    piglatinized = @phrase.words.each {|word| piglatinize_word(word)}
+    piglatinized = words.each {|word| piglatinize_word(word)}
   end
 
 end
