@@ -24,4 +24,9 @@ class PigLatinize
     end
     piglatinized
   end
+
+  def piglatinize(phrase)
+    
+  end
+
 end
