@@ -28,6 +28,7 @@ class PigLatinizer
 
   def piglatinize
     piglatinized = words.each {|word| piglatinize_word(word)}
+    piglatinized
   end
 
 end
