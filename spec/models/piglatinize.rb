@@ -9,7 +9,7 @@ class PigLatinize
     @phrase.split
   end
 
-  def starts_with(phrase)
-
+  def starts_with(word)
+    
   end
 end
