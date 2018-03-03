@@ -12,4 +12,9 @@ class PigLatinize
   def starts_with_vowel(word)
     ["a", "e", "i", "o", "u"].include?(word[0])
   end
+
+  def piglatinize_word(word)
+    if starts_with_vowel(word)
+      piglatinized = word + 'hay'
+  end
 end
