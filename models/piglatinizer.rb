@@ -1,17 +1,17 @@
 class PigLatinizer
   VOWELS = ["a", "e", "i", "o", "u"]
 
-  def words
-    @phrase.split
+  def words(phrase)
+    phrase.split
   end
 
   def starts_with_vowel(word)
     VOWELS.include?(word[0])
   end
 
-  def piglatinize_word(word)
+  def piglatinize(word)
     if starts_with_vowel(word)
-      piglatinized = word + 'hay'
+      piglatinized = word + 'way'
     else
       first_vowel = word.index(/[aeiou]/)
       move_letters = word[0..(first_vowel - 1)]
@@ -20,8 +20,8 @@ class PigLatinizer
     piglatinized
   end
 
-  def piglatinize
-    piglatinized = words.each.collect {|word| piglatinize_word(word)}
+  def to_pig_latin(phrase)
+    piglatinized = words(phrase).each.collect {|word| piglatinize_word(word)}
     piglatinized.join(" ")
   end
 
