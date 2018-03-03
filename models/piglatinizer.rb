@@ -4,7 +4,6 @@ class PigLatinizer
 
   def initialize(phrase)
     @phrase = phrase
-    self.piglatinize
   end
 
   def words
@@ -27,8 +26,8 @@ class PigLatinizer
   end
 
   def piglatinize
-    piglatinized = words.each {|word| piglatinize_word(word)}
-    piglatinized
+    piglatinized = words.each.collect {|word| piglatinize_word(word)}
+    piglatinized.join(" ")
   end
 
 end
