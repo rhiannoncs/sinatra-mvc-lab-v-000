@@ -5,4 +5,3 @@ Bundler.require(:default, ENV['SINATRA_ENV'])
 
 require './app'
 require_all 'models'
-require_all 'views'
