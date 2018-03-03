@@ -26,7 +26,7 @@ class PigLatinize
   end
 
   def piglatinize(phrase)
-    
+    piglatinized = phrase.words.each {|word| piglatinize_word(word)}
   end
 
 end
