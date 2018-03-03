@@ -18,6 +18,6 @@ class PigLatinize
     if starts_with_vowel(word)
       piglatinized = word + 'hay'
     else
-
+      first_vowel = word.index(/[aeiou]/)
   end
 end
