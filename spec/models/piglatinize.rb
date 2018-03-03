@@ -1,4 +1,4 @@
-class PigLatinize
+class PigLatinizer
   attr_reader :phrase
   VOWELS = ["a", "e", "i", "o", "u"]
 
