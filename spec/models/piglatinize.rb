@@ -1,6 +1,6 @@
 class PigLatinize
   attr_reader :phrase
-  @@vowels = ["a", "e", "i", "o", "u"]
+  VOWELS = ["a", "e", "i", "o", "u"]
 
   def initialize(phrase)
     @phrase = phrase
@@ -11,13 +11,13 @@ class PigLatinize
   end
 
   def starts_with_vowel(word)
-    @@vowels.include?(word[0])
+    VOWELS.include?(word[0])
   end
 
   def piglatinize_word(word)
     if starts_with_vowel(word)
       piglatinized = word + 'hay'
     else
-      
+
   end
 end
