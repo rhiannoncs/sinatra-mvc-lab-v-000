@@ -7,5 +7,7 @@ class App < Sinatra::Base
 
   post '/piglatinize' do
     phrase = params[:user_phrase]
+
+    erb :piglatinize
   end
 end
